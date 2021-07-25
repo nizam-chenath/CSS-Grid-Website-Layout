@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family:  juventus-Fans-Bold;
+    font-size: 16px;
+    line-height: 20px;
+    color: black;
+}
+
 .container{
     max-width: 1000px;
     margin: 50px auto;
@@ -19,6 +26,14 @@
 .logo{
     grid-area: logo;
     background-color: rgba(54, 95, 67, 0.137);
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    color: black;
+    font-size: 41px;
+    font-weight: 800;
+    text-decoration: none;
 }
 .main{
     grid-area: main;

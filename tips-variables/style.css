@@ -1,0 +1,26 @@
+:root{
+    --bg-color: skyblue;
+}
+
+
+
+.header1{
+    color: red;
+    background-color: var(--bg-color);
+}
+.header2{
+    color: yellow;
+    background-color: var(--bg-color);
+}
+.header3{
+    color: green;
+    background-color: var(--bg-color);
+}
+.header4{
+    color: blueviolet;
+    background-color: var(--bg-color);
+}
+.header5{
+    color: black;
+    background-color: var(--bg-color);
+}

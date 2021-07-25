@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section{
+    flex: 25%;
+    padding: 0 3px;
+}
+
+img{
+    width: 100%;
+    margin: 1px 0;
+    transform: scale(0.8) rotate(-45);
+    transition: 1s ease-in-out;
+}
+img:hover{
+    transform: scale(1);
+}
+
+@media (max-width: 991px){
+    .section{
+        flex: 25%;
+
+    }
+}
+@media (max-width: 767px){
+    .section{
+        flex: 50%;
+
+    }
+}
+@media (max-width: 567px){
+    .section{
+        flex: 100%;
+
+    }
+}

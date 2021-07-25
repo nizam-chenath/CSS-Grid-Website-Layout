@@ -1,0 +1,27 @@
+body{
+    margin: 0;
+    background-color: rgb(4,224,188);
+}
+div{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    background-color: white;
+    animation: expand 1.5s ease-out 1s infinite;
+    transition: 1s ease-in-out;
+    
+}
+div:hover{
+    animation-play-state: paused;
+    background-color: orange;
+}
+
+@keyframes expand{
+    from{
+        width: 200px;
+
+    }
+    to{
+        width: 600px;
+    }
+}

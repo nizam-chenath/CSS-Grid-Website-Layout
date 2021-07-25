@@ -1,0 +1,18 @@
+button:hover{
+    background-color: lightblue;
+    border: 3px solid black;
+    padding: 20px;
+}
+input:focus{
+    background-color: aqua;
+    border: 1px solid red;
+}
+div p:nth-child(2){
+    color:rosybrown;
+    background-color: aquamarine;
+    padding: 16px;
+}
+/*psdoelement*/
+p::before{
+    content: "HELLO";
+}

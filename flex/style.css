@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+}
+h1{
+    margin: 0;
+}
+.container{
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-evenly;
+    height: 400px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.one,.two,.three{
+    width: 300px;
+    height: 200px;
+    background-color: orange;
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+}

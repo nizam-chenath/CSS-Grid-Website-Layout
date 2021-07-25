@@ -1,0 +1,14 @@
+h1,h2,h3{
+    color:blue;
+    background-color: aquamarine;
+}
+p{
+    color: brown;
+}
+#para2{
+    color: blue;
+}
+.common{
+    color: black;
+    background-color: rgb(43, 226, 89);
+}

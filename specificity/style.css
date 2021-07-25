@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 40px;
+}
+h1{
+    color: aqua;
+}
+div h1{
+    color: red;
+}
+#header{
+    color: yellow;
+}

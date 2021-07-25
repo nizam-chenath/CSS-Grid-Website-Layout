@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 50px auto;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    grid-template-rows: 1fr 4fr 1.2fr 1.2fr;
+    grid-template-areas: "logo   logo   header"
+                         "main   main   imgBox"  
+                         "qoutes qoutes imgBox"
+                         "btn1   btn2   imgBox" ; 
+}
+.logo{
+    grid-area: logo;
+    background-color: rgba(54, 95, 67, 0.137);
+}
+.main{
+    grid-area: main;
+    background-color:black;
+}
+.quotes{
+    grid-area: qoutes;
+    background-color: rgb(216, 216, 216)
+}
+.btn1{
+    grid-area: btn1;
+    background-color: rgb(216, 216, 216)
+}
+.btn2{
+    grid-area: btn2;
+    background-color: black
+}
+header{
+    grid-area: header;
+    background-color: lightgray;
+}
+.img-box{
+    grid-area: imgBox;
+    background-color: rgb(216, 216, 216);
+}

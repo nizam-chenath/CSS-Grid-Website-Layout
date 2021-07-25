@@ -1,0 +1,22 @@
+body{
+    margin: 0px;
+    color: brown;
+}
+h1{
+    margin: 0%;
+    color: aquamarine;
+}
+header{
+    margin: 0px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: black;
+}
+div{
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+    border: 4px dotted red;
+    
+    
+}

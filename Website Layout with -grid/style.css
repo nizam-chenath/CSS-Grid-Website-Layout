@@ -56,8 +56,26 @@ a{
     margin-bottom: 30px;
     max-width: 350px;
 }
+.main h1{
+    animation-delay: .5s;
+}
 .main p{
     color: aliceblue;
+    animation-delay: 1s;
+}
+.pop-in{
+    animation: popIn 2s ease-in 2s forwards;
+    opacity: 0;
+}
+@keyframes popIn{
+    from{
+        opacity: 0;
+        transform: translateX(-100px) scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: none;
+    }
 }
 .quotes{
     grid-area: quotes;
@@ -95,14 +113,18 @@ a{
 .btn1{
     grid-area: btn1;
     background-color: rgb(216, 216, 216);
-    border-color: black;
-    border-radius: 10px;
+   
+    
 }
 .btn2{
     grid-area: btn2;
     background-color: rgba(0, 0, 0, 0.815);
-    padding: 0 125px;
-    border-radius: 10px;
+}
+.btn{
+    transition: background-color .2s ease-in-out ;
+}
+.btn:hover{
+    background-color: aliceblue;
 }
 header{
     grid-area: header;
@@ -122,6 +144,11 @@ header ul li a{
     padding: 30px 15px;
     font-weight: 700;
     color: black;
+    transition: color .4s ease-in;
+}
+
+header ul li:hover a{
+    color:white;
 }
 .img-box{
     grid-area: imgBox;
@@ -130,14 +157,24 @@ header ul li a{
     background: url(images/Juventus.jpg) no-repeat top center;
     background-size: cover;
 }
-
-
+.slide-in{
+    animation: slidIn 2s ease forwards;
+}
+@keyframes slidIn{
+    0%{
+        opacity: 0;
+        transform: translateX(150px);
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 
 @media(max-width: 767px){ 
    
     .container{
-        width: 100vw;
+        height: auto;
         overflow: hidden;
         grid-template-columns: 1fr 1fr;
         grid-template-areas:  "logo   logo"
@@ -146,12 +183,11 @@ header ul li a{
                               "main   main"
                               "quotes quotes"
                               "btn1   btn2";
-        grid-template-rows: 100px 50px 30vh auto auto 70px;
+        grid-template-rows: 100px 50px auto auto 70px;
 
     }
 
     .logo{
-        width: 100%;
         padding-left: 0;
         justify-content: center;
     }
